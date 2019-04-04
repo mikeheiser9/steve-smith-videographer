@@ -10,35 +10,103 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Steven Nicholas Smith Videography and Photography</title>
+    <title>Steven Nicholas Smith Director and Cinematographer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <!-- favicon -->
     <link rel="icon" href="./images/video-camera.png">
 
-    <meta property="og:title" content="Steven Nicholas Smith Videography and Photography">
+    <meta property="og:title" content="Steven Nicholas Smith Director and Cinematographer">
     <meta property="og:description" content="Steven Nicholas Smith is a videographer and photographer located in North Hollywood, CA">
     <meta property="og:image" content="./img/bdlLogoPrev.jpg">
     <meta property="og:url" content="https://stevennicholassmith.com">
     <meta name="twitter:card" content="summary_large_image">
     
     <!--  Non-Essential, But Recommended -->
-    <meta property="og:site_name" content="Steven Nicholas Smith Videography and Photography">
-    <meta name="twitter:image:alt" content="Steven Nicholas Smith Videography and Photography">
+    <meta property="og:site_name" content="Steven Nicholas Smith Director and Cinematographer">
+    <meta name="twitter:image:alt" content="Steven Nicholas Smith Director and Cinematographer">
 
     <!-- Animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Podkova:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
-    <div class="container">
-        <h1>TESTING</h1>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-11 col-md-11 col-sm-11 no-pad">
+            <div class="video-container">
+                <video autoplay muted loop id="video-bg">
+                    <source src="./images/reel.mp4" type="video/mp4">
+                </video>
+                    <img src="./images/expand-button.png" class="expand-img">
+                <div class="intro-container" id="introCont">
+                    <div class="top-intro">
+                        <p>Steven Nicholas Smith</p>
+                    </div>
+                    <div class="two-intro">
+                        <p>Director and Cinematographer</p>
+                    </div>
+                    <div class="three-intro">
+                        <p>Los Angeles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 no-pad">
+            <div class="full-height-nav">
+
+                <a class="nav-link rotate" id="viewReelNav" href="#">View My Reel</a>
+                            
+                <a class="nav-link rotate" id="photoNav" href="#">Photography</a>
+                
+                <a class="nav-link rotate" id="aboutNav" href="#">About</a>
+                                
+                <a href="#"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
+                                    
+                <a href="#"><img src="./images/facebook.png" alt="fb" class="social-icon" id="facebookIcon"></a>
+                                    
+                <a href="#"><img src="./images/envelope.png" alt="email" class="social-icon" id="emailIcon"></a>
+
+            </div> 
+        </div>
+
     </div>
+        <!-- <div class="video-container">
+                <video autoplay loop id="video-bg">
+                    <source src="./images/reel-vid-no-sound.mp4" type="video/mp4">
+                </video>
+        </div>
+            <ul class="nav justify-content-center full-screen-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">View My Reel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/instagram.png" alt="instagram" class="social-icon"></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./images/facebook.png" alt="fb" class="social-icon"></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./images/envelope.png" alt="email" class="social-icon"></a>
+                </li>
+            </ul> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
