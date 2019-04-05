@@ -38,7 +38,7 @@
 
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
     <div class="row">
         <div class="col-lg-11 col-md-11 col-sm-11 no-pad">
             <div class="video-container">
@@ -58,35 +58,76 @@
                     </div>
                 </div>
             </div>
-            <div class="view-reel-cont">
-                
+            <div class="view-reel-cont" id="reel">
+                <div class="open-container">
+                    <p class="inner-text">View My Reel:</p>
+                    <a class="play toggle" href="#reelModal" data-toggle="modal">
+						<span class="title" id="play">Play</span>
+						<span class="circle"></span>
+					</a>
+                </div>
+                <!-- <div class="up-arrow">
+                        <a href="#"><img src="./images/up-arrow.png" class="arrow"></a>
+                    </div> -->
+            </div>
+            <img src="./images/expand-button.png" class="expand-img">
+            <div class="photo-cont" id="photo">
+                    <div class="open-container">
+                            <p class="inner-text" id="innerPhotoTxt">My Photography</p>
+                            <!-- <a href="#"><span class="big-circle"></span></a> -->
+                            <a class="play toggle" href="#photoModal" data-toggle="modal" id="photoCircle">
+                                <span class="title" id="view">View</span>
+                                <span class="circle"></span>
+                            </a>
+                        </div>
+            </div>
+            <img src="./images/expand-button.png" class="expand-img">
+            <div class="contact-cont" id="about">
+                <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="name-container">
+                    <p class="name">Steven Nicholas Smith</p>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="about-holder">
+                        <p class="about">Director and Cinematographer.<br>Based in Los Angeles, CA, USA</p>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                         <div class="social-icon-btm-cont">
+                            <a href="https://www.instagram.com/synematic/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="social-icon-btm"></a>
+                            <a href="https://www.facebook.com/Synematic/" target="_blank"><img src="./images/facebook.png" alt="fb" class="social-icon-btm"></a>
+                            <a href="mailto:StevenNSmith8@gmail.com?Subject=Hello%20Steve" target="_top"><img src="./images/envelope.png" alt="email" class="social-icon-btm"></a>
+                         </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 no-pad">
             <div class="full-height-nav">
 
-                <a class="nav-link rotate" id="viewReelNav" href="#">View My Reel</a>
+                <a class="nav-link rotate" id="viewReelNav" href="#reel">View My Reel</a>
                             
-                <a class="nav-link rotate" id="photoNav" href="#">Photography</a>
+                <a class="nav-link rotate" id="photoNav" href="#photo">Photography</a>
                 
-                <a class="nav-link rotate" id="aboutNav" href="#">About</a>
+                <a class="nav-link rotate" id="aboutNav" href="#about">About</a>
                                 
-                <a href="#"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
+                <a href="https://www.instagram.com/synematic/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
                                     
-                <a href="#"><img src="./images/facebook.png" alt="fb" class="social-icon" id="facebookIcon"></a>
+                <a href="https://www.facebook.com/Synematic/" target="_blank"><img src="./images/facebook.png" alt="fb" class="social-icon" id="facebookIcon"></a>
                                     
-                <a href="#"><img src="./images/envelope.png" alt="email" class="social-icon" id="emailIcon"></a>
+                <a href="mailto:StevenNSmith8@gmail.com?Subject=Hello%20Steve" target="_top">
+                    <img src="./images/envelope.png" alt="email" class="social-icon" id="emailIcon">
+                </a>
 
             </div> 
         </div>
 
     </div>
-        <!-- <div class="video-container">
-                <video autoplay loop id="video-bg">
-                    <source src="./images/reel-vid-no-sound.mp4" type="video/mp4">
-                </video>
-        </div>
-            <ul class="nav justify-content-center full-screen-nav">
+            <!-- <ul class="nav justify-content-center full-screen-nav">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">View My Reel</a>
                 </li>
@@ -106,10 +147,176 @@
                         <a class="nav-link" href="#"><img src="./images/envelope.png" alt="email" class="social-icon"></a>
                 </li>
             </ul> -->
+
+    <!-- Reel Modal -->
+<div class="portfolio-modal modal fade" id="reelModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content bg-light-gray">
+                        <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="modal-title">
+                                <p class="modal-title-txt">My Reel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="reel-container-modal">
+                                <iframe src="https://player.vimeo.com/video/328510781?title=0&byline=0&portrait=0&transparent=0" width="100%" height="auto" frameborder="0" title="false" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <button class="modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+<!-- END -->
+
+ <!-- Photo Modal -->
+ <div class="portfolio-modal modal fade" id="photoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content bg-light-gray">
+                        <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="modal-title">
+                                <p class="modal-title-txt">My Photography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active" data-interval="10000">
+                                        <img src="./images/JTA_0788.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/JTA_0791.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/JTA_0802.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/JTA_0805.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/JT_4103.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/LV_8452.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/Pigeon-Philly.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/america.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/beach.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/beachlady.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/beardman.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/bikela.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/caption.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/coolguy.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/desert.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/girls.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/jonny.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/julez.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/lakes.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/nightstarrs.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/nightstars2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/niteshoes.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/niteshoes2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/pebblebeach.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/shoes.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="8000">
+                                        <img src="./images/sunset.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+
+                    </div>
+                
+                    <div class="row">
+                    <button class="modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+<!-- END -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+    $( document ).ready(function() {
+        console.log("ready!")
+
+        $("#reelModal").on('hidden.bs.modal', function (e) {
+            $("#reelModal iframe").attr("src", $("#reelModal iframe").attr("src"));
+        });
+    });
+    </script>
+
 </body>
 </html>

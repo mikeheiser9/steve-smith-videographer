@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -68,8 +69,9 @@ html, body {
     overflow: hidden;
     top: 0;
     right: 0;
-    background: rgba(0,0,0, 0.5);
-  }
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid white;
+}
 
 #video-bg {
     position: relative;
@@ -79,14 +81,14 @@ html, body {
     background-size: cover;
     overflow: hidden;
     z-index: -1000;
-  }
+}
 
-  video {
+video {
     display: block;
-  }
+}
 
-  .full-height-nav {
-    background-image: linear-gradient(to right,	#707070, #000);
+.full-height-nav {
+    background-image: linear-gradient(to right, #707070, #000);
     height: 100% !important;
     width: 110px !important;
     min-width: 110px !important;
@@ -94,14 +96,14 @@ html, body {
     position: fixed;
     border-left: 2px solid white;
 
-  }
+}
 
-  .no-pad {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-  }
+.no-pad {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
-  .rotate {
+.rotate {
     padding: 0;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -111,19 +113,19 @@ html, body {
     font-size: 18px;
     color: white;
     position: absolute;
-  }
+}
 
-  .rotate:hover {
-      color: lightgray !important;
-  }
+.rotate:hover {
+    color: lightgray !important;
+}
 
-  .video-overlay {
-      position: relative;
-      width: 100%; 
-      height: 100%;
-  }
+.video-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
-  .expand-img {
+.expand-img {
     position: absolute;
     margin-top: -100px;
     width: 80px;
@@ -131,37 +133,45 @@ html, body {
     margin-left: 50%;
     margin-right: 50%;
     -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  }
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: 20;
+}
 
-  @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
 }
 
 .expand-img:hover {
-        cursor: pointer;
-        animation-name: bounce;
-        -moz-animation-name: bounce;
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
 }
 
 .intro-container {
@@ -177,6 +187,7 @@ html, body {
     text-shadow: 2px 2px 8px #707070;
     letter-spacing: 10px;
 }
+
 .two-intro {
     font-size: 20px;
     color: white;
@@ -184,6 +195,7 @@ html, body {
     text-shadow: 2px 2px 8px #707070;
     letter-spacing: 5px;
 }
+
 .three-intro {
     font-size: 20px;
     color: white;
@@ -191,3 +203,345 @@ html, body {
     letter-spacing: 5px;
 }
 
+.view-reel-cont {
+    height: 800px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #707070;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+
+.view-reel-cont::after {
+    content: "";
+    background: url("./images/niteshoes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.photo-cont {
+    height: 800px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #707070;
+    z-index: 1;
+    border-bottom: 2px solid white;
+
+}
+
+.photo-cont::after {
+    content: "";
+    background: url("./images/LV_8452.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.contact-cont {
+    height: 800px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #707070;
+    z-index: 1;
+}
+
+.contact-cont::after {
+    content: "";
+    background: url("./images/bikela.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.open-container {
+    padding-top: 300px;
+}
+
+.inner-text {
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding-left: 20%;
+    text-shadow: 2px 2px 8px #707070;
+}
+
+.big-circle {
+    display: inline-block;
+    padding: 50px;
+    background-color: white;
+    width: 130px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a.play,
+a.play:visited {
+    font-style: italic;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    margin-left: 670px;
+    margin-top: -93px;
+}
+
+.play .circle {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    z-index: -1;
+}
+
+.circle:hover {
+    background-color: red;
+}
+
+#photoCircle {
+    margin-left: 765px
+}
+
+#innerPhotoTxt {
+    padding-left: 865px;
+}
+
+.name-container {
+    text-align: center;
+    margin-top: 275px;
+}
+
+.name {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 8px #707070;
+}
+
+.about-holder {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.about {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 8px #707070;
+}
+
+.social-icon-btm-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon-btm {
+    max-width: 40px;
+    height: auto;
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.up-arrow {
+    background-color: white;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 360px;
+    z-index: 1000;
+    height: 40px;
+    border: 1px solid black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding-top: 120px;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 150px;
+    cursor: pointer
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3
+}
+
+.portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 4px;
+    margin-left: 35px;
+    background-color: #ffff;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 4px;
+    background-color: #ffff;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052
+}
+
+.portfolio-modal .modal-backdrop {
+    opacity: 0;
+    display: none
+}
+
+.modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: auto
+}
+
+.modalRow {
+    width: 120%;
+    float: right;
+    margin-top: 20px;
+}
+
+.modal-headings {
+    padding: 30px;
+}
+.modal-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px #707070;
+}
+/* .reel-contianer-modal {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.reel-container-modal {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.reel-container-modal iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+
+.modal-close {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #707070;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.modal-close:hover {
+    background-color: red;
+    border: 1px solid white;
+}
+
+.d-block {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+.w-100 {
+    width: 75% !important;
+    max-width: 75% !important;
+    min-width: 75% !important;
+}
