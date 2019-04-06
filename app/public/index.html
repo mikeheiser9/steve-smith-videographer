@@ -34,11 +34,47 @@
 
     <link href="https://fonts.googleapis.com/css?family=Podkova:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div class="container-fluid" id="home">
+        <div class="mobile-nav-container">
+                <nav class="navbar navbar-light light-blue lighten-4 nav">                      
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                              class="fas fa-bars fa-1x"></i></span></button>
+                      
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                      
+                          <!-- Links -->
+                          <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#reel">View My Reel</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#photo">Photography</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                          
+                          <div class="social-container-top">
+                                <div class="nav-item social-link">
+                                        <a class="nav-link" href="https://www.instagram.com/synematic/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="social-icon-top"></a>
+                                </div>
+                                    <div class="nav-item social-link">
+                                            <a class="nav-link" href="https://www.facebook.com/Synematic/" target="_blank"><img src="./images/facebook.png" alt="fb" class="social-icon-top"></a>
+                                    </div>
+                                    <div class="nav-item social-link">
+                                            <a class="nav-link" href="mailto:StevenNSmith8@gmail.com?Subject=Hello%20Steve"><img src="./images/envelope.png" alt="email" class="social-icon-top"></a>
+                                    </div>
+                                </ul>
+                          </div>
+                        </div>                      
+                      </nav>
+        </div>
     <div class="row">
         <div class="col-lg-11 col-md-11 col-sm-11 no-pad">
             <div class="video-container">
@@ -109,11 +145,11 @@
         <div class="col-lg-1 col-md-1 col-sm-1 no-pad">
             <div class="full-height-nav">
 
-                <a class="nav-link rotate" id="viewReelNav" href="#reel">View My Reel</a>
+                <a class="nav-link-side rotate" id="viewReelNav" href="#reel">View My Reel</a>
                             
-                <a class="nav-link rotate" id="photoNav" href="#photo">Photography</a>
+                <a class="nav-link-side rotate" id="photoNav" href="#photo">Photography</a>
                 
-                <a class="nav-link rotate" id="aboutNav" href="#about">About</a>
+                <a class="nav-link-side rotate" id="aboutNav" href="#about">About</a>
                                 
                 <a href="https://www.instagram.com/synematic/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
                                     
@@ -127,26 +163,6 @@
         </div>
 
     </div>
-            <!-- <ul class="nav justify-content-center full-screen-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">View My Reel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Photography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="./images/instagram.png" alt="instagram" class="social-icon"></a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="./images/facebook.png" alt="fb" class="social-icon"></a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="./images/envelope.png" alt="email" class="social-icon"></a>
-                </li>
-            </ul> -->
 
     <!-- Reel Modal -->
 <div class="portfolio-modal modal fade" id="reelModal" tabindex="-1" role="dialog" aria-hidden="true">
