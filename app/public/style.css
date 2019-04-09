@@ -3,7 +3,8 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    font-family: 'Podkova', serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
 }
 
 .container-fluid {
@@ -80,7 +81,7 @@ body {
     top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 #video-bg {
@@ -104,7 +105,7 @@ video {
     min-width: 110px !important;
     overflow: hidden;
     position: fixed;
-    border-left: 2px solid white;
+    border-left: 1px solid white;
 
 }
 
@@ -120,7 +121,7 @@ video {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     position: absolute;
 }
@@ -140,8 +141,10 @@ video {
     margin-top: -100px;
     width: 80px;
     display: block;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -193,7 +196,7 @@ video {
 .top-intro {
     font-size: 40px;
     color: white;
-    font-weight: 800;
+    font-weight: 200;
     text-shadow: 2px 2px 8px #707070;
     letter-spacing: 10px;
 }
@@ -201,7 +204,7 @@ video {
 .two-intro {
     font-size: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 200;
     text-shadow: 2px 2px 8px #707070;
     letter-spacing: 5px;
 }
@@ -220,7 +223,7 @@ video {
     position: relative;
     background-color: #707070;
     z-index: 1;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .view-reel-cont::after {
@@ -244,7 +247,7 @@ video {
     position: relative;
     background-color: #707070;
     z-index: 1;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 
 }
 
@@ -273,7 +276,7 @@ video {
 
 .contact-cont::after {
     content: "";
-    background: url("./images/bikela.jpg");
+    background: url("./images/nite-bike-la-jonny.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -352,11 +355,11 @@ a.play:visited {
 }
 
 #photoCircle {
-    margin-left: 765px
+    margin-left: 725px
 }
 
 #innerPhotoTxt {
-    padding-left: 865px;
+    padding-left: 820px;
 }
 
 .name-container {
@@ -392,7 +395,8 @@ a.play:visited {
     max-width: 40px;
     height: auto;
     display: inline-block;
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 100px;
     align-items: center;
 }
@@ -455,7 +459,7 @@ a.play:visited {
 
 .portfolio-modal .close-modal .lr {
     height: 75px;
-    width: 4px;
+    width: 2px;
     margin-left: 35px;
     background-color: #ffff;
     transform: rotate(45deg);
@@ -466,7 +470,7 @@ a.play:visited {
 
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
-    width: 4px;
+    width: 2px;
     background-color: #ffff;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -526,7 +530,7 @@ a.play:visited {
     background-color: #707070;
     font-size: 20px;
     color: white;
-    font-weight: 900;
+    font-weight: 200;
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -556,7 +560,7 @@ a.play:visited {
     top: 0;
     background-image: linear-gradient(#707070, #202020);
     z-index: 1500;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .nav {
@@ -586,13 +590,33 @@ a.play:visited {
     }
 
     .navbar-nav {
-        background: rgba(0,0,0,0.9);
+        
         margin-top: 3px;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 30px;
         padding-top: 30px;
+        background-image: url("./images/nightstarrs.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
 }
+
+/* .navbar-nav::before {
+    background-image: url("./images/nightstarrs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
 
 .social-link {
     width: 60px;
@@ -604,6 +628,20 @@ a.play:visited {
     border-color: rgba(255,255,255,.1);
 }
 
+.btm-link-social {
+    width: 75px;
+    align-items: center;
+    text-align: center;
+}
+.carousel {
+    position: relative;
+    min-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
 @media (max-width: 1360px) {
     .nav-link-side {
         margin-left: -5px;
@@ -613,6 +651,15 @@ a.play:visited {
     }
     .social-icon {
         margin-left: 30px;
+    }
+}
+
+@media (max-width: 1340px) {
+    #photoCircle {
+        margin-left: 570px;
+    }
+    #innerPhotoTxt {
+        padding-left: 670px;
     }
 }
 
@@ -641,6 +688,21 @@ a.play:visited {
     .social-icon {
         margin-left: 25px;
     }
+    .inner-text {
+        padding-left: 100px;
+    }
+    a.play, a.play:visited {
+        margin-left: 500px;
+    }
+}
+
+@media (max-width: 1175px) {
+    #photoCircle {
+        margin-left: 405px;
+    }
+    #innerPhotoTxt {
+        padding-left: 500px;
+    }
 }
 
 @media (max-width: 1099px) {
@@ -654,6 +716,67 @@ a.play:visited {
         margin-left: 16px;
     }
 
+}
+
+@media (max-width: 1024px) {
+    .intro-container {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 992px) {
+    .inner-text {
+        padding-left: 55px;
+    }
+    a.play, a.play:visited {
+        margin-left: 440px;
+    }
+    .open-container {
+        padding-top: 400px;
+    }
+    .portfolio-modal .modal-content {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .portfolio-modal .close-modal {
+        right: 75px;
+    }
+    #photoCircle {
+        margin-left: 350px;
+    }
+    #innerPhotoTxt {
+        padding-left: 445px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .name-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .about-holder {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact-cont {
+        height: 400px;
+    }
+    .contact-cont::after{
+        background-position: center;
+    }
+    .social-icon-btm {
+        padding-top: 50px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    .about {
+        font-size: 18px;
+    }
+    .social-icon-btm {
+        max-width: 28px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -682,6 +805,162 @@ a.play:visited {
     }
     .video-container {
         margin-top: 75px;
+    }
+    .portfolio-modal .modal-content {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 860px) {
+    #photoCircle {
+        margin-left: 235px;
+    }
+    #innerPhotoTxt {
+        padding-left: 330px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .photo-cont {
+        height: 600px;
+    }
+    .view-reel-cont {
+        height: 600px;
+    }
+    .about-cont {
+        height: 400px;
+    }
+    .open-container {
+        padding-top: 280px;
+    }
+}
+
+@media (max-width: 745px) {
+    #photoCircle {
+        margin-left: 120px;
+    }
+    #innerPhotoTxt {
+        padding-left: 210px;
+    }
+}
+
+@media (max-width: 685px) {
+    .top-intro {
+        letter-spacing: 5px;
+    }
+    .two-intro {
+        letter-spacing: 2px;
+    }
+    .three-intro {
+        letter-spacing: 2px;
+    }
+    .expand-img {
+        width: 40px;
+        margin-top: -50px;
+    }
+    .intro-container {
+        margin-left: 40px;
+        margin-top: -200px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    #photoCircle {
+        margin-left: 55px;
+    }
+    #innerPhotoTxt {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 550px) {
+    .inner-text {
+        margin-left: 30px;
+        font-size: 32px;
+    }
+    a.play, a.play:visited {
+        margin-left: 355px;
+        margin-top: -80px;
+    }
+    #innerPhotoTxt {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .top-intro {
+        letter-spacing: 0px;
+        font-size: 22px;
+        
+    }
+    .two-intro {
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    .three-intro {
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    .intro-container {
+        margin-top: -155px;
+    }
+    .portfolio-modal .modal-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .portfolio-modal .close-modal {
+        right: 25px;
+    }
+    .view-reel-cont {
+        height: 400px;
+    }
+    .photo-cont {
+        height: 400px;
+    }
+    .open-container {
+        padding-top: 180px;
+    }
+    #photoCircle {
+        margin-left: 25px;
+    }
+    #innerPhotoTxt {
+        padding-left: 115px;
+    }
+}
+
+@media (max-width: 414px) {
+    .inner-text {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+    a.play, a.play:visited {
+        margin-left: 265px;
+    }
+}
+
+@media (max-width: 375px) {
+    .inner-text {
+        margin-left: 25px;
+        font-size: 28px;
+    }
+    a.play, a.play:visited {
+        margin-left: 235px;
+        margin-top: -77px;
+    }
+}
+@media (max-width: 325px) {
+    .inner-text {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    a.play, a.play:visited {
+        margin-left: 235px;
+        margin-top: -77px;
+    }
+    a.play, a.play:visited {
+        margin-left: 205px;
     }
 }
 
