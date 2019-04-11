@@ -228,7 +228,7 @@ video {
 
 .view-reel-cont::after {
     content: "";
-    background: url("./images/niteshoes.jpg");
+    background: url("./images/ScrnSht04.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -440,13 +440,14 @@ a.play:visited {
     text-align: center;
     padding-right: 150px;
     padding-left: 150px;
+    padding-bottom: 100px;
     background: rgba(0, 0, 0, 0.9);
 }
 
 .portfolio-modal .close-modal {
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     top: 25px;
     right: 150px;
@@ -458,9 +459,9 @@ a.play:visited {
 }
 
 .portfolio-modal .close-modal .lr {
-    height: 75px;
+    height: 40px;
     width: 2px;
-    margin-left: 35px;
+    margin-left: 19px;
     background-color: #ffff;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -469,7 +470,7 @@ a.play:visited {
 }
 
 .portfolio-modal .close-modal .lr .rl {
-    height: 75px;
+    height: 40px;
     width: 2px;
     background-color: #ffff;
     transform: rotate(90deg);
