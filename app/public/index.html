@@ -80,9 +80,11 @@
         <div class="col-lg-11 col-md-11 col-sm-11 no-pad">
             <div class="video-container">
                 <video autoplay muted loop id="video-bg">
-                    <source src="./images/reel-no-sound-hold.mp4" type="video/mp4">
+                    <source src="./images/reel.mp4" type="video/mp4">
                 </video>
-                    <img src="./images/expand-button.png" class="expand-img">
+                <a class="down-arrow toscroll" id="1arrow" href="#reel">
+                    <img src="./images/down-arrow.png" class="expand-img">
+                </a>
                 <div class="intro-container" id="introCont">
                     <div class="top-intro">
                         <p>Steven Nicholas Smith</p>
@@ -97,7 +99,7 @@
             </div>
             <div class="view-reel-cont" id="reel">
                 <div class="open-container">
-                    <p class="inner-text">View Reel:</p>
+                    <p class="inner-text">View Reel</p>
                     <a class="play toggle" href="#reelModal" data-toggle="modal">
 						<span class="title" id="play">Play</span>
 						<span class="circle"></span>
@@ -107,7 +109,9 @@
                         <a href="#"><img src="./images/up-arrow.png" class="arrow"></a>
                     </div> -->
             </div>
-            <img src="./images/expand-button.png" class="expand-img">
+            <a class="down-arrow toscroll" id="2arrow" href="#photo">
+            <img src="./images/down-arrow.png" class="expand-img">
+            </a>
             <div class="photo-cont" id="photo">
                     <div class="open-container">
                             <p class="inner-text" id="innerPhotoTxt">Photography</p>
@@ -118,17 +122,26 @@
                             </a>
                         </div>
             </div>
-            <img src="./images/expand-button.png" class="expand-img">
+            <a class="down-arrow toscroll" id="3arrow" href="#about">
+            <img src="./images/down-arrow.png" class="expand-img">
+            </a>
             <div class="contact-cont" id="about">
                 <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                 <div class="name-container">
                     <p class="name">Steven Nicholas Smith</p>
                 </div>
+                <div class="about-holder">
+                        <img src="./images/AboutMePic.jpg" alt="sns" class="about-me-img">
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="about-holder">
-                        <p class="about">Director and Cinematographer.<br>Based in Los Angeles, CA, USA</p>
+                    <div class="bio-cont">
+                        <p class="bio">Steven Nicholas Smith is a filmmaker, photographer, and artist. He was born in Seoul, South Korea, but moved to the U.S. at an early age. Being the son of a Military father, he moved around a lot, until they settled down in West Chester, a suburb of Philadelphia, PA.
+                        <br><br>
+                        Steven was always interested in the arts, starting with drawing and painting as a young kid. As a teenager, he took interest in Hip Hop Dance culture and ventured into the world of B-Boyin', better known as break-dancing. It was his involvement in the dance and Hip-Hop culture that saw him transition from the movement-arts to making moving-images.
+                        <br><br>
+                        When Steven graduated high school, he moved to Philadelphia and attended Drexel University, where he graduated with a Bachelor's in Science, majoring in Digital Media, with a minor in Film & Video. After spending several years in Philadelphia, Steven packed up his things and headed west, to the City of Angels. Armed with ambition and a dream, he continues to pursue his love of the art of storytelling.<br><br>He currently works and resides in Los Angeles, CA.</p>
                     </div>
                 </div>
                 </div>
@@ -152,11 +165,11 @@
                 
                 <a class="nav-link-side rotate" id="aboutNav" href="#about">About</a>
                                 
-                <a href="https://www.instagram.com/synematic/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
+                <a href="https://www.instagram.com/synematic/" target="_blank" class="side-social" id="instaLink"><img src="./images/instagram.png" alt="instagram" class="social-icon" id="instagramIcon"></a>
                                     
-                <a href="https://www.facebook.com/Synematic/" target="_blank"><img src="./images/facebook.png" alt="fb" class="social-icon" id="facebookIcon"></a>
+                <a href="https://www.facebook.com/Synematic/" target="_blank" class="side-social" id="fbLink"><img src="./images/facebook.png" alt="fb" class="social-icon" id="facebookIcon"></a>
                                     
-                <a href="mailto:StevenNSmith8@gmail.com?Subject=Hello%20Steve" target="_top">
+                <a href="mailto:StevenNSmith8@gmail.com?Subject=Hello%20Steve" target="_top" class="side-social" id="emailLink">
                     <img src="./images/envelope.png" alt="email" class="social-icon" id="emailIcon">
                 </a>
 
@@ -217,64 +230,64 @@
                             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                       <div class="carousel-item active" data-interval="10000">
-                                        <img src="./images/jules1.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/01-JB_6772 blu tint.jpg" class="d-block w-100" alt="...">
                                       </div>
                                       <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/lady.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/02-JLO_3840_b.jpg" class="d-block w-100" alt="...">
                                       </div>
                                       <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/dude.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/03-LV_8452.jpg" class="d-block w-100" alt="...">
                                       </div>
                                       <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/homie.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/04-DamonW_8771.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/vegas.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/05-DGaines_9285.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/nite-bike-la-jonny.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/06-JA_2853 1920x1280.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/coolshoes.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/07-BTTF_1383.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jules2.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/08-BTTF_1196b.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jules3.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/09-JBI_7410.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/omgshoes.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/10-JBI_7414.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt7.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/11-JLW_1273_2400.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt6.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/12-JMoon_9514.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt5.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/13-JT_4089.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt4.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/14-JT_4103.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt3.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/15-JTA_0788.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt2.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/16-JTA_0791.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/jt1.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/17-JTA_0805.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/sunset.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/18-IgBa_5273.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/beach.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/19-IgBa_5379.jpg" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-item" data-interval="8000">
-                                        <img src="./images/phillyphilly.jpg" class="d-block w-100" alt="...">
+                                        <img src="./images/20-Pigeon-Philly-0224.jpg" class="d-block w-100" alt="...">
                                         </div>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -310,6 +323,16 @@
         $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
 });
+
+$("a.toscroll").on('click',function(e) {
+    var url = e.target.href;
+    var hash = url.substring(url.indexOf("#")+1);
+    $('html, body').animate({
+        scrollTop: $('#'+hash).offset().top
+    }, 500);
+    return false;
+});
+
     });
     </script>
 

@@ -5,6 +5,11 @@ body {
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container-fluid {
@@ -17,26 +22,12 @@ body {
     max-width: 28px;
     height: auto;
     display: block;
-    padding-top: 25px;
-    margin-left: 40px;
-    position: absolute;
-    padding-top: 30px;
-}
-
-#instagramIcon {
-    margin-top: 550px;
-}
-
-#facebookIcon {
-    margin-top: 600px;
-}
-
-#emailIcon {
-    margin-top: 650px;
+    position: relative;
 }
 
 #viewReelNav {
     margin-top: 140px;
+    margin-left: 10px;
 }
 
 #photoNav {
@@ -248,12 +239,12 @@ video {
     background-color: #707070;
     z-index: 1;
     border-bottom: 1px solid white;
-
+    scroll-behavior: smooth;
 }
 
 .photo-cont::after {
     content: "";
-    background: url("./images/LV_8452.jpg");
+    background: url("./images/03-LV_8452.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -272,11 +263,12 @@ video {
     position: relative;
     background-color: #707070;
     z-index: 1;
+    scroll-behavior: smooth;
 }
 
 .contact-cont::after {
     content: "";
-    background: url("./images/nite-bike-la-jonny.jpg");
+    background: url("./images/20-Pigeon-Philly-0224.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -297,8 +289,8 @@ video {
     color: white;
     font-size: 50px;
     letter-spacing: 5px;
-    padding-left: 20%;
     text-shadow: 2px 2px 8px #707070;
+    margin-left: 140px;
 }
 
 .big-circle {
@@ -331,7 +323,7 @@ a.play:visited {
     position: absolute;
     z-index: 10;
     border: none;
-    margin-left: 670px;
+    margin-left: 430px;
     margin-top: -93px;
 }
 
@@ -355,16 +347,16 @@ a.play:visited {
 }
 
 #photoCircle {
-    margin-left: 725px
+    margin-left: 760px
 }
 
 #innerPhotoTxt {
-    padding-left: 820px;
+    margin-left: 850px;
 }
 
 .name-container {
     text-align: center;
-    margin-top: 275px;
+    margin-top: 80px;
 }
 
 .name {
@@ -375,7 +367,6 @@ a.play:visited {
 
 .about-holder {
     text-align: center;
-    margin-top: 250px;
 }
 
 .about {
@@ -384,11 +375,21 @@ a.play:visited {
     text-shadow: 2px 2px 8px #707070;
 }
 
+.bio {
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-size: 16px;
+    text-align: left;
+    padding-right: 100px;
+    padding-top: 125px;
+}
+
 .social-icon-btm-cont {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .social-icon-btm {
@@ -397,7 +398,6 @@ a.play:visited {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
     align-items: center;
 }
 
@@ -436,7 +436,7 @@ a.play:visited {
     box-shadow: none;
     border: none;
     min-height: 100%;
-    padding-top: 120px;
+    padding-top: 20px;
     text-align: center;
     padding-right: 150px;
     padding-left: 150px;
@@ -451,7 +451,8 @@ a.play:visited {
     background-color: transparent;
     top: 25px;
     right: 150px;
-    cursor: pointer
+    cursor: pointer;
+    z-index: 2;
 }
 
 .portfolio-modal .close-modal:hover {
@@ -596,28 +597,27 @@ a.play:visited {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 30px;
-        padding-top: 30px;
-        background-image: url("./images/nightstarrs.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
+        padding-top: 30px;background-color: #707070;
+        position: relative;
+        z-index: 1;
+        border: 1px solid white;
 }
 
-/* .navbar-nav::before {
-    background-image: url("./images/nightstarrs.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+.navbar-nav::after {
     content: "";
-    display: block;
-    position: absolute;
+    background: url("./images/nightstarrs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
     z-index: -1;
-    opacity: 0.4;
-} */
+}
 
 .social-link {
     width: 60px;
@@ -643,6 +643,32 @@ a.play:visited {
     padding-bottom: 50px;
 }
 
+.side-social {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    margin-left: 33px;
+}
+
+#instaLink {
+    margin-top: 550px;
+}
+
+#fbLink {
+    margin-top: 600px;
+}
+
+#emailLink {
+    margin-top: 650px;
+}
+
+.about-me-img {
+    max-width: 400px;
+    height: auto;
+    opacity: .7;
+    border: 1px solid white;
+}
+
 @media (max-width: 1360px) {
     .nav-link-side {
         margin-left: -5px;
@@ -650,17 +676,11 @@ a.play:visited {
     #aboutNav {
             margin-left: 20px;
     }
-    .social-icon {
+    .side-social {
         margin-left: 30px;
     }
-}
-
-@media (max-width: 1340px) {
-    #photoCircle {
-        margin-left: 570px;
-    }
-    #innerPhotoTxt {
-        padding-left: 670px;
+    #viewReelNav {
+        margin-left: 5px;
     }
 }
 
@@ -671,11 +691,20 @@ a.play:visited {
     #aboutNav {
             margin-left: 14px;
     }
-    .social-icon {
+    .side-social {
         margin-left: 25px;
     }
     .intro-container {
         margin-top: -350px;
+    }
+    #viewReelNav {
+        margin-left: 0px;
+    }
+    #photoCircle {
+        margin-left: 590px;
+    }
+    #innerPhotoTxt {
+        margin-left: 690px;
     }
 }
 
@@ -686,23 +715,8 @@ a.play:visited {
     #aboutNav {
             margin-left: 14px;
     }
-    .social-icon {
+    .side-social {
         margin-left: 25px;
-    }
-    .inner-text {
-        padding-left: 100px;
-    }
-    a.play, a.play:visited {
-        margin-left: 500px;
-    }
-}
-
-@media (max-width: 1175px) {
-    #photoCircle {
-        margin-left: 405px;
-    }
-    #innerPhotoTxt {
-        padding-left: 500px;
     }
 }
 
@@ -713,8 +727,17 @@ a.play:visited {
     #aboutNav {
             margin-left: 7px;
         }
-    .social-icon {
+    .side-social {
         margin-left: 16px;
+    }
+    #viewReelNav {
+        margin-left: -9px;
+    }
+    #photoCircle {
+        margin-left: 530px;
+    }
+    #innerPhotoTxt {
+        margin-left: 630px;
     }
 
 }
@@ -723,14 +746,27 @@ a.play:visited {
     .intro-container {
         margin-left: 90px;
     }
+    .inner-text {
+        margin-left: 90px;
+    }
+    a.play,
+    a.play:visited {
+        margin-left: 380px;
+    }
+    #photoCircle {
+        margin-left: 500px;
+    }
+    #innerPhotoTxt {
+        margin-left: 600px;
+    }
 }
 
 @media (max-width: 992px) {
     .inner-text {
-        padding-left: 55px;
+        margin-left: 80px;
     }
     a.play, a.play:visited {
-        margin-left: 440px;
+        margin-left: 370px;
     }
     .open-container {
         padding-top: 400px;
@@ -743,10 +779,10 @@ a.play:visited {
         right: 75px;
     }
     #photoCircle {
-        margin-left: 350px;
+        margin-left: 460px;
     }
     #innerPhotoTxt {
-        padding-left: 445px;
+        margin-left: 560px;
     }
 
 }
@@ -759,9 +795,6 @@ a.play:visited {
     .about-holder {
         text-align: center;
         margin-top: 20px;
-    }
-    .contact-cont {
-        height: 400px;
     }
     .contact-cont::after{
         background-position: center;
@@ -777,6 +810,9 @@ a.play:visited {
     }
     .social-icon-btm {
         max-width: 28px;
+    }
+    .view-reel-cont::after {
+        background-position: center;
     }
 }
 
@@ -812,14 +848,22 @@ a.play:visited {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 885px) {
     #photoCircle {
-        margin-left: 235px;
+        margin-left: 400px;
     }
     #innerPhotoTxt {
-        padding-left: 330px;
+        margin-left: 500px;
     }
+}
 
+@media (max-width: 820px) {
+    #photoCircle {
+        margin-left: 300px;
+    }
+    #innerPhotoTxt {
+        margin-left: 400px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -837,12 +881,14 @@ a.play:visited {
     }
 }
 
-@media (max-width: 745px) {
-    #photoCircle {
-        margin-left: 120px;
-    }
-    #innerPhotoTxt {
-        padding-left: 210px;
+@media (max-width: 720px) {
+    @media (max-width: 885px) {
+        #photoCircle {
+            margin-left: 250px;
+        }
+        #innerPhotoTxt {
+            margin-left: 350px;
+        }
     }
 }
 
@@ -864,15 +910,21 @@ a.play:visited {
         margin-left: 40px;
         margin-top: -200px;
     }
+    #photoCircle {
+        margin-left: 200px;
+    }
+    #innerPhotoTxt {
+        margin-left: 300px;
+    }
 
 }
 
-@media (max-width: 630px) {
+@media (max-width: 620px) {
     #photoCircle {
-        margin-left: 55px;
+        margin-left: 110px;
     }
     #innerPhotoTxt {
-        padding-left: 150px;
+        margin-left: 210px;
     }
 }
 
@@ -882,11 +934,14 @@ a.play:visited {
         font-size: 32px;
     }
     a.play, a.play:visited {
-        margin-left: 355px;
+        margin-left: 240px;
         margin-top: -80px;
     }
     #innerPhotoTxt {
-        margin-left: 0px;
+        margin-left: 200px;
+    }
+    .photo-cont::after {
+        background-position: center;
     }
 }
 
@@ -923,12 +978,6 @@ a.play:visited {
     .open-container {
         padding-top: 180px;
     }
-    #photoCircle {
-        margin-left: 25px;
-    }
-    #innerPhotoTxt {
-        padding-left: 115px;
-    }
 }
 
 @media (max-width: 414px) {
@@ -937,7 +986,7 @@ a.play:visited {
         letter-spacing: 2px;
     }
     a.play, a.play:visited {
-        margin-left: 265px;
+        margin-left: 205px;
     }
 }
 
@@ -947,21 +996,27 @@ a.play:visited {
         font-size: 28px;
     }
     a.play, a.play:visited {
-        margin-left: 235px;
-        margin-top: -77px;
+        margin-left: 180px;
     }
 }
+
+@media (max-width: 360px) {
+    #innerPhotoTxt {
+        margin-left: 170px;
+    }
+    #photoCircle {
+        margin-left: 80px;
+    }
+}
+
 @media (max-width: 325px) {
     .inner-text {
         margin-left: 20px;
         font-size: 24px;
+        padding-bottom: 5px;
     }
     a.play, a.play:visited {
-        margin-left: 235px;
-        margin-top: -77px;
-    }
-    a.play, a.play:visited {
-        margin-left: 205px;
+        margin-left: 155px;
     }
 }
 
