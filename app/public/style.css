@@ -189,7 +189,7 @@ video {
     color: white;
     font-weight: 200;
     text-shadow: 2px 2px 8px #707070;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 .two-intro {
@@ -219,7 +219,7 @@ video {
 
 .view-reel-cont::after {
     content: "";
-    background: url("./images/ScrnSht04.jpg");
+    background: url("./images/ScrnSht07.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
