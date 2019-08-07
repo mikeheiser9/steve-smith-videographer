@@ -97,7 +97,6 @@ video {
     overflow: hidden;
     position: fixed;
     border-left: 1px solid white;
-
 } */
 
 .full-width-nav {
@@ -155,7 +154,7 @@ video {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
-    z-index: 20;
+    z-index: 1;
 }
 
 @keyframes bounce {
@@ -221,8 +220,12 @@ video {
 .view-reel-cont {
     height: 800px;
     width: 100%;
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-flow: row nowrap;
     position: relative;
+    justify-content: center;
+    align-items: center;
     background-color: #707070;
     z-index: 1;
     border-bottom: 1px solid white;
@@ -245,7 +248,10 @@ video {
 .photo-cont {
     height: 800px;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: #707070;
     z-index: 1;
@@ -292,7 +298,10 @@ video {
 }
 
 .open-container {
-    padding-top: 300px;
+    /* padding-top: 300px; */
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: -10%;
 }
 
 .inner-text {
@@ -301,7 +310,7 @@ video {
     font-size: 50px;
     letter-spacing: 5px;
     text-shadow: 2px 2px 8px #707070;
-    margin-left: 140px;
+    /* margin-left: 140px; */
 }
 
 .big-circle {
@@ -334,8 +343,9 @@ a.play:visited {
     position: absolute;
     z-index: 10;
     border: none;
-    margin-left: 430px;
-    margin-top: -93px;
+    /* margin-left: 430px; */
+    margin-left: 310px;
+    /* margin-top: -93px; */
 }
 
 .play .circle {
@@ -358,12 +368,17 @@ a.play:visited {
 }
 
 #photoCircle {
-    margin-left: 760px
+    /* margin-left: 760px; */
+    margin-left: -115px;
 }
 
-#innerPhotoTxt {
-    margin-left: 850px;
+#photoContent {
+    margin-left: 10%;
 }
+
+/* #innerPhotoTxt {
+    margin-left: 850px;
+} */
 
 .name-container {
     text-align: center;
@@ -612,11 +627,9 @@ a.play:visited {
         border: 1px solid white;
 }
 
-
-
 .navbar-nav::after {
     content: "";
-    background: url("./images/nightstarrs.jpg");
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -702,7 +715,7 @@ a.play:visited {
         margin-left: -10px;
     }
     #aboutNav {
-            margin-left: 14px;
+        margin-left: 14px;
     }
     .side-social {
         margin-left: 25px;
@@ -713,12 +726,12 @@ a.play:visited {
     #viewReelNav {
         margin-left: 0px;
     }
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 590px;
     }
     #innerPhotoTxt {
         margin-left: 690px;
-    }
+    } */
 }
 
 @media (max-width: 1180px) {
@@ -726,7 +739,7 @@ a.play:visited {
         margin-left: -10px;
     }
     #aboutNav {
-            margin-left: 14px;
+        margin-left: 14px;
     }
     .side-social {
         margin-left: 25px;
@@ -753,12 +766,12 @@ a.play:visited {
     #viewReelNav {
         margin-left: -9px;
     }
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 530px;
     }
     #innerPhotoTxt {
         margin-left: 630px;
-    }
+    } */
 
 }
 
@@ -772,31 +785,31 @@ a.play:visited {
     .intro-container {
         margin-left: 90px;
     }
-    .inner-text {
+    /* .inner-text {
         margin-left: 90px;
-    }
-    a.play,
+    } */
+    /* a.play,
     a.play:visited {
         margin-left: 380px;
-    }
-    #photoCircle {
+    } */
+    /* #photoCircle {
         margin-left: 500px;
-    }
-    #innerPhotoTxt {
+    } */
+    /* #innerPhotoTxt {
         margin-left: 600px;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
-    .inner-text {
+    /* .inner-text {
         margin-left: 80px;
-    }
-    a.play, a.play:visited {
+    } */
+    /* a.play, a.play:visited {
         margin-left: 370px;
-    }
-    .open-container {
+    } */
+    /* .open-container {
         padding-top: 400px;
-    }
+    } */
     .portfolio-modal .modal-content {
         padding-left: 75px;
         padding-right: 75px;
@@ -804,12 +817,12 @@ a.play:visited {
     .portfolio-modal .close-modal {
         right: 75px;
     }
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 460px;
     }
     #innerPhotoTxt {
         margin-left: 560px;
-    }
+    } */
 
 }
 
@@ -895,12 +908,12 @@ a.play:visited {
 } */
 
 @media (max-width: 885px) {
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 400px;
     }
     #innerPhotoTxt {
         margin-left: 500px;
-    }
+    } */
     .bio {
         margin-left: -90px;
     }
@@ -910,12 +923,12 @@ a.play:visited {
 }
 
 @media (max-width: 820px) {
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 300px;
     }
     #innerPhotoTxt {
         margin-left: 400px;
-    }
+    } */
     .bio {
         font-size: 13px;
         padding-top: 130px;
@@ -933,9 +946,9 @@ a.play:visited {
     .about-cont {
         height: 400px;
     }
-    .open-container {
+    /* .open-container {
         padding-top: 280px;
-    }
+    } */
 }
 
 @media (max-width: 767px) {
@@ -968,14 +981,14 @@ a.play:visited {
     }
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
         #photoCircle {
             margin-left: 250px;
         }
         #innerPhotoTxt {
             margin-left: 350px;
         }
-}
+} */
 
 @media (max-width: 685px) {
     .top-intro {
@@ -995,26 +1008,26 @@ a.play:visited {
         margin-left: 40px;
         margin-top: -200px;
     }
-    #photoCircle {
+    /* #photoCircle {
         margin-left: 200px;
     }
     #innerPhotoTxt {
         margin-left: 300px;
-    }
+    } */
 
 }
 
-@media (max-width: 620px) {
+/* @media (max-width: 620px) {
     #photoCircle {
         margin-left: 110px;
     }
     #innerPhotoTxt {
         margin-left: 210px;
     }
-}
+} */
 
 @media (max-width: 550px) {
-    .inner-text {
+    /* .inner-text {
         margin-left: 30px;
         font-size: 32px;
     }
@@ -1024,9 +1037,25 @@ a.play:visited {
     }
     #innerPhotoTxt {
         margin-left: 200px;
-    }
+    } */
     .photo-cont::after {
         background-position: center;
+    }
+    .inner-text {
+        font-size: 28px;
+    }
+    a.play, a.play:visited {
+        margin-left: 185px;
+        margin-top: -20px;
+    }
+    .open-container {
+        margin-left: -20%;
+    }
+    #photoContent {
+        margin-left: 20%;
+    }
+    #photoCircle {
+        margin-left: -90px;
     }
 }
 
@@ -1045,8 +1074,7 @@ a.play:visited {
 @media (max-width: 450px) {
     .top-intro {
         letter-spacing: 0px;
-        font-size: 22px;
-        
+        font-size: 22px;  
     }
     .two-intro {
         letter-spacing: 0px;
@@ -1072,12 +1100,12 @@ a.play:visited {
     .photo-cont {
         height: 400px;
     }
-    .open-container {
+    /* .open-container {
         padding-top: 180px;
-    }
+    } */
 }
 
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
     .inner-text {
         padding-left: 0px;
         letter-spacing: 2px;
@@ -1085,16 +1113,16 @@ a.play:visited {
     a.play, a.play:visited {
         margin-left: 205px;
     }
-}
+} */
 
 @media (max-width: 375px) {
-    .inner-text {
+    /* .inner-text {
         margin-left: 25px;
         font-size: 28px;
     }
     a.play, a.play:visited {
         margin-left: 180px;
-    }
+    } */
     .social-icon-btm {
         padding-top: 0px;
     }
@@ -1105,31 +1133,33 @@ a.play:visited {
 }
 
 @media (max-width: 360px) {
-    #innerPhotoTxt {
+    /* #innerPhotoTxt {
         margin-left: 170px;
     }
     #photoCircle {
         margin-left: 80px;
-    }
+    } */
     .navbar-light .navbar-toggler {
         color: white;
         border-color: rgba(255,255,255,.9);
-        margin-top: -30px;
         margin-left: -10px;
     }
 }
 
 @media (max-width: 325px) {
-    .inner-text {
+    /* .inner-text {
         margin-left: 20px;
         font-size: 24px;
         padding-bottom: 5px;
     }
     a.play, a.play:visited {
         margin-left: 155px;
-    }
+    } */
     .contact-cont {
         height: 985px;
+    }
+    #photoContent {
+        margin-left: 25%;
     }
 }
 
